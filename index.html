@@ -1,0 +1,433 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramiro | Polideportivo Valdelasfuentes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#0A0A0A] text-[#FAFAFA] selection:bg-[#D9281C] selection:text-[#FAFAFA] overflow-x-hidden relative z-0 font-sans antialiased" style="font-family: 'Inter', sans-serif;">
+
+    <!-- Smooth Background Effect -->
+    <div class="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] max-w-[600px] max-h-[600px] bg-[#D9281C]/10 blur-[120px] rounded-full mix-blend-screen animate-pulse" style="animation-duration: 8s;"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] max-w-[600px] max-h-[600px] bg-[#D9281C]/5 blur-[120px] rounded-full mix-blend-screen animate-pulse" style="animation-duration: 12s; animation-delay: 2s;"></div>
+        <div class="absolute top-[40%] left-[60%] w-[30vw] h-[30vw] max-w-[500px] max-h-[500px] bg-[#D9281C]/5 blur-[100px] rounded-full mix-blend-screen animate-pulse" style="animation-duration: 10s; animation-delay: 4s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 top-0 transition-all duration-500 py-6 border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-12">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="flex flex-col justify-center">
+                        <span class="text-2xl font-normal tracking-tight leading-none text-[#FAFAFA] group-hover:text-[#D9281C] transition-colors duration-300">RAMIRO</span>
+                        <span class="text-base font-light tracking-tight leading-none text-[#FAFAFA] mt-1 pl-6 group-hover:text-[#D9281C] transition-colors duration-300">ALCOBENDAS</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 100ms;">
+                    <a href="#about" class="text-base font-light text-[#A3A3A3] hover:text-[#FAFAFA] transition-colors duration-300">Nuestra Historia</a>
+                    <a href="#menu" class="text-base font-light text-[#A3A3A3] hover:text-[#FAFAFA] transition-colors duration-300">Menú</a>
+                    <a href="#contact" class="text-base font-light text-[#A3A3A3] hover:text-[#FAFAFA] transition-colors duration-300">Ubicación</a>
+                    <div class="magnetic-wrap inline-block">
+                        <a href="#contact" class="magnetic-btn inline-flex items-center justify-center px-6 py-2.5 text-base font-light text-[#0A0A0A] bg-[#FAFAFA] hover:bg-[#D9281C] hover:text-[#FAFAFA] rounded-full transition-colors duration-300">
+                            Reservar Mesa
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 100ms;">
+                    <button class="text-[#FAFAFA] hover:text-[#D9281C] transition-colors duration-300 flex items-center justify-center">
+                        <iconify-icon icon="solar:hamburger-menu-linear" stroke-width="1.5" class="text-2xl"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Parallax Background -->
+        <div id="parallax-bg" class="absolute inset-0 w-full h-full bg-center bg-cover bg-no-repeat scale-[1.05] will-change-transform z-[-1]" style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&amp;w=2667&amp;auto=format&amp;fit=crop');">
+            <!-- High Contrast Gradient Overlays -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/90 via-[#0A0A0A]/60 to-[#0A0A0A]"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent"></div>
+        </div>
+
+        <div class="relative w-full max-w-7xl mx-auto px-6 lg:px-8 pt-20">
+            <div class="max-w-3xl">
+                <div class="js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1A1A1A]/80 border border-white/10 text-[#FAFAFA] mb-8 backdrop-blur-md hover:bg-[#1A1A1A] transition-colors duration-300 cursor-default">
+                    <iconify-icon icon="solar:fire-linear" class="text-[#D9281C] text-base" stroke-width="1.5"></iconify-icon>
+                    <span class="text-xs font-light tracking-wide uppercase">100% Cocina Casera</span>
+                </div>
+                <h1 class="js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] text-6xl md:text-8xl lg:text-9xl font-normal tracking-tight text-[#FAFAFA] mb-6 leading-[1.05]" style="transition-delay: 100ms;">
+                    El Auténtico <br>
+                    Sabor de <span class="text-[#D9281C] inline-block relative">
+                        Alcobendas.
+                        <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#D9281C] to-transparent rounded-full opacity-50 blur-[2px]"></div>
+                    </span>
+                </h1>
+                <p class="js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] text-lg md:text-xl text-[#A3A3A3] mb-10 max-w-xl font-light leading-relaxed tracking-tight" style="transition-delay: 200ms;">
+                    Disfruta de nuestra cocina casera en el Polideportivo Valdelasfuentes. Platos preparados con ingredientes frescos y el sabor de siempre.
+                </p>
+                <div class="js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col sm:flex-row gap-5 inline-block" style="transition-delay: 300ms;">
+                    <div class="magnetic-wrap inline-block">
+                        <a href="#menu" class="magnetic-btn inline-flex items-center justify-center px-8 py-4 text-lg font-light text-[#FAFAFA] bg-[#D9281C] hover:bg-[#b01e14] rounded-full transition-all duration-300 hover:shadow-[0_10px_40px_rgba(217,40,28,0.3)] group">
+                            Ver Menú
+                            <iconify-icon icon="solar:arrow-right-linear" class="ml-2 text-xl transform group-hover:translate-x-1 transition-transform duration-300" stroke-width="1.5"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 400ms;">
+            <span class="text-xs font-light tracking-widest uppercase text-[#A3A3A3]">Deslizar</span>
+            <div class="w-[1px] h-12 bg-gradient-to-b from-[#A3A3A3] to-transparent relative overflow-hidden flex justify-center">
+                <div class="w-full h-1/2 bg-[#FAFAFA] animate-bounce mt-2 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 lg:py-32 relative bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                
+                <!-- Text Content -->
+                <div class="order-2 lg:order-1 relative z-10">
+                    <h2 class="text-[#D9281C] text-xs font-normal tracking-widest uppercase mb-4 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">Nuestra Filosofía</h2>
+                    <h3 class="text-4xl lg:text-6xl font-normal tracking-tight text-[#FAFAFA] mb-8 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 100ms;">Dominando el Arte <br>de la Cocina Local.</h3>
+                    
+                    <div class="space-y-6 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 200ms;">
+                        <p class="text-lg text-[#A3A3A3] leading-relaxed font-light tracking-tight">
+                            En Ramiro, nos especializamos en ofrecer una experiencia gastronómica única en el corazón de Valdelasfuentes. Preparamos cada plato con dedicación y cariño, buscando siempre la excelencia en cada bocado.
+                        </p>
+                        <p class="text-lg text-[#A3A3A3] leading-relaxed font-light tracking-tight">
+                            Cada comida es un homenaje a la tradición y al buen hacer. Utilizamos solo los mejores ingredientes locales para que te sientas como en casa tras tu sesión de deporte.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 300ms;">
+                        <div class="group flex items-center gap-4 p-4 rounded-2xl bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 hover:border-white/10 hover:bg-[#202020]/80 transition-colors duration-300">
+                            <div class="w-10 h-10 rounded-full bg-[#D9281C]/10 flex items-center justify-center shrink-0 group-hover:bg-[#D9281C]/20 transition-colors duration-300">
+                                <iconify-icon icon="solar:check-circle-linear" class="text-[#D9281C] text-xl" stroke-width="1.5"></iconify-icon>
+                            </div>
+                            <span class="text-base text-[#FAFAFA] font-light">Sin Aditivos</span>
+                        </div>
+                        <div class="group flex items-center gap-4 p-4 rounded-2xl bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 hover:border-white/10 hover:bg-[#202020]/80 transition-colors duration-300">
+                            <div class="w-10 h-10 rounded-full bg-[#D9281C]/10 flex items-center justify-center shrink-0 group-hover:bg-[#D9281C]/20 transition-colors duration-300">
+                                <iconify-icon icon="solar:check-circle-linear" class="text-[#D9281C] text-xl" stroke-width="1.5"></iconify-icon>
+                            </div>
+                            <span class="text-base text-[#FAFAFA] font-light">Ingredientes Frescos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Side -->
+                <div class="order-1 lg:order-2 relative group overflow-hidden rounded-3xl js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <!-- Decorative background element -->
+                    <div class="absolute -inset-4 bg-[#D9281C]/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000 mix-blend-screen"></div>
+                    
+                    <div class="relative rounded-3xl overflow-hidden aspect-[4/5] bg-[#1A1A1A] border border-white/10 z-10">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&amp;w=2574&amp;auto=format&amp;fit=crop" alt="Ramiro Restaurante Interior" class="w-full h-full object-cover transform scale-[1.1] transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/80 via-transparent to-transparent opacity-80"></div>
+                        
+                        <!-- Floating Highlight Badge -->
+                        <div class="absolute bottom-6 left-6 right-6 bg-[#1A1A1A]/80 backdrop-blur-xl p-5 rounded-2xl border border-white/10 flex items-center justify-between transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <div>
+                                <p class="text-xs text-[#A3A3A3] font-light uppercase tracking-wider mb-1">Ambiente</p>
+                                <p class="text-xl font-normal text-[#FAFAFA] tracking-tight">Espacio Acogedor</p>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-[#D9281C] flex items-center justify-center shadow-[0_0_20px_rgba(217,40,28,0.4)]">
+                                <iconify-icon icon="solar:shop-linear" class="text-[#FAFAFA] text-xl" stroke-width="1.5"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-24 lg:py-32 bg-transparent relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <h2 class="text-[#D9281C] text-xs font-normal tracking-widest uppercase mb-4">Menú Especial</h2>
+                <h3 class="text-4xl lg:text-6xl font-normal tracking-tight text-[#FAFAFA] mb-6">Preparado con el Alma</h3>
+                <p class="text-lg text-[#A3A3A3] font-light tracking-tight">Descubre nuestra selección de platos caseros, raciones y opciones saludables para reponer fuerzas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Menu Item 1 -->
+                <div class="group relative bg-[#1A1A1A]/80 backdrop-blur-md rounded-3xl overflow-hidden border border-white/5 flex flex-col hover:border-[#D9281C]/40 hover:shadow-[0_0_40px_-10px_rgba(217,40,28,0.2)] hover:-translate-y-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 100ms;">
+                    <div class="relative h-64 overflow-hidden bg-[#0A0A0A]">
+                        <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?q=80&amp;w=2677&amp;auto=format&amp;fit=crop" alt="Menú del Día" class="w-full h-full object-cover transform scale-[1.02] group-hover:scale-110 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow relative z-10 -mt-10">
+                        <span class="inline-block px-3 py-1 bg-[#0A0A0A]/80 backdrop-blur-md border border-white/10 text-[#FAFAFA] text-xs font-light rounded-full self-start mb-4 shadow-xl">Especialidad</span>
+                        <h4 class="text-2xl font-normal tracking-tight text-[#FAFAFA] mb-1">Menú del Día</h4>
+                        <p class="text-base font-light text-[#F5C518] mb-4">La opción más completa.</p>
+                        <p class="text-base text-[#A3A3A3] mb-6 flex-grow leading-relaxed font-light">Platos equilibrados y llenos de energía, ideales después de un buen entrenamiento. Incluye primer plato, segundo, bebida y postre o café.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                            <span class="text-xl font-normal tracking-tight text-[#FAFAFA]">12.50€</span>
+                            <button class="w-10 h-10 rounded-full bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-[#FAFAFA] group-hover:bg-[#D9281C] group-hover:border-[#D9281C] transition-all duration-300 transform group-hover:scale-110">
+                                <iconify-icon icon="solar:bag-linear" class="text-base" stroke-width="1.5"></iconify-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="group relative bg-[#1A1A1A]/80 backdrop-blur-md rounded-3xl overflow-hidden border border-white/5 flex flex-col hover:border-[#D9281C]/40 hover:shadow-[0_0_40px_-10px_rgba(217,40,28,0.2)] hover:-translate-y-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 200ms;">
+                    <div class="relative h-64 overflow-hidden bg-[#0A0A0A]">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&amp;w=2671&amp;auto=format&amp;fit=crop" alt="Ración de Bravas" class="w-full h-full object-cover transform scale-[1.02] group-hover:scale-110 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow relative z-10 -mt-10">
+                        <span class="inline-flex items-center gap-1 px-3 py-1 bg-[#0A0A0A]/80 backdrop-blur-md border border-white/10 text-[#D9281C] text-xs font-light rounded-full self-start mb-4 shadow-xl">
+                            <iconify-icon icon="solar:fire-linear" class="text-sm" stroke-width="1.5"></iconify-icon>
+                            Picante
+                        </span>
+                        <h4 class="text-2xl font-normal tracking-tight text-[#FAFAFA] mb-1">Ración de Bravas</h4>
+                        <p class="text-base font-light text-[#F5C518] mb-4">Para compartir y disfrutar.</p>
+                        <p class="text-base text-[#A3A3A3] mb-6 flex-grow leading-relaxed font-light">Nuestras famosas patatas bravas cortadas a mano, fritas en su punto exacto, con un toque picante y la salsa secreta de Ramiro.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                            <span class="text-xl font-normal tracking-tight text-[#FAFAFA]">6.50€</span>
+                            <button class="w-10 h-10 rounded-full bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-[#FAFAFA] group-hover:bg-[#D9281C] group-hover:border-[#D9281C] transition-all duration-300 transform group-hover:scale-110">
+                                <iconify-icon icon="solar:bag-linear" class="text-base" stroke-width="1.5"></iconify-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="group relative bg-[#1A1A1A]/80 backdrop-blur-md rounded-3xl overflow-hidden border border-white/5 flex flex-col hover:border-[#D9281C]/40 hover:shadow-[0_0_40px_-10px_rgba(217,40,28,0.2)] hover:-translate-y-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 300ms;">
+                    <div class="relative h-64 overflow-hidden bg-[#0A0A0A]">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Tortilla de Patatas" class="w-full h-full object-cover transform scale-[1.02] group-hover:scale-110 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow relative z-10 -mt-10">
+                        <span class="inline-block px-3 py-1 bg-[#0A0A0A]/80 backdrop-blur-md border border-white/10 text-[#A3A3A3] text-xs font-light rounded-full self-start mb-4 shadow-xl">Ración</span>
+                        <h4 class="text-2xl font-normal tracking-tight text-[#FAFAFA] mb-1">Tortilla de Patatas</h4>
+                        <p class="text-base font-light text-[#F5C518] mb-4">El clásico infalible.</p>
+                        <p class="text-base text-[#A3A3A3] mb-6 flex-grow leading-relaxed font-light">El acompañamiento perfecto. Hecha al momento, jugosa, con huevos camperos y patata confitada a fuego lento.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                            <span class="text-xl font-normal tracking-tight text-[#FAFAFA]">4.50€</span>
+                            <button class="w-10 h-10 rounded-full bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-[#FAFAFA] group-hover:bg-[#D9281C] group-hover:border-[#D9281C] transition-all duration-300 transform group-hover:scale-110">
+                                <iconify-icon icon="solar:bag-linear" class="text-base" stroke-width="1.5"></iconify-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="group relative bg-[#1A1A1A]/80 backdrop-blur-md rounded-3xl overflow-hidden border border-white/5 flex flex-col hover:border-[#D9281C]/40 hover:shadow-[0_0_40px_-10px_rgba(217,40,28,0.2)] hover:-translate-y-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 400ms;">
+                    <div class="relative h-64 overflow-hidden bg-[#0A0A0A]">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&amp;w=2670&amp;auto=format&amp;fit=crop" alt="Croquetas Caseras" class="w-full h-full object-cover transform scale-[1.02] group-hover:scale-110 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow relative z-10 -mt-10">
+                        <span class="inline-block px-3 py-1 bg-[#0A0A0A]/80 backdrop-blur-md border border-white/10 text-[#A3A3A3] text-xs font-light rounded-full self-start mb-4 shadow-xl">Aperitivo</span>
+                        <h4 class="text-2xl font-normal tracking-tight text-[#FAFAFA] mb-1">Croquetas Caseras</h4>
+                        <p class="text-base font-light text-[#F5C518] mb-4">Doradas y cremosas.</p>
+                        <p class="text-base text-[#A3A3A3] mb-6 flex-grow leading-relaxed font-light">Nuestra receta tradicional de croquetas de jamón ibérico. Crujientes por fuera, con una bechamel suave y llena de sabor.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                            <span class="text-xl font-normal tracking-tight text-[#FAFAFA]">7.00€</span>
+                            <button class="w-10 h-10 rounded-full bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-[#FAFAFA] group-hover:bg-[#D9281C] group-hover:border-[#D9281C] transition-all duration-300 transform group-hover:scale-110">
+                                <iconify-icon icon="solar:bag-linear" class="text-base" stroke-width="1.5"></iconify-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] inline-block w-full">
+                <div class="magnetic-wrap inline-block">
+                    <a href="#" class="magnetic-btn inline-flex items-center justify-center px-8 py-3.5 text-base font-light text-[#0A0A0A] bg-[#FAFAFA] hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] rounded-full transition-all duration-300">
+                        Explorar Carta Completa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="bg-transparent pt-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-24 items-center">
+                
+                <!-- Left: Info -->
+                <div class="relative z-10">
+                    <h2 class="text-[#D9281C] text-xs font-normal tracking-widest uppercase mb-4 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">Visítanos</h2>
+                    <h3 class="text-4xl lg:text-6xl font-normal tracking-tight text-[#FAFAFA] mb-10 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]" style="transition-delay: 100ms;">Reserva una Mesa o <br>Contáctanos.</h3>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-5 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group cursor-default" style="transition-delay: 200ms;">
+                            <div class="w-12 h-12 rounded-2xl bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#202020]/80 group-hover:border-[#D9281C]/30 transition-colors duration-300">
+                                <iconify-icon icon="solar:map-point-linear" class="text-[#D9281C] text-2xl" stroke-width="1.5"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-normal tracking-tight text-[#FAFAFA] mb-1 group-hover:text-[#D9281C] transition-colors duration-300">Polideportivo Valdelasfuentes</h4>
+                                <p class="text-base text-[#A3A3A3] leading-relaxed font-light">Calle Miguel de Cervantes, s/n,<br>28100 Alcobendas, Madrid</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group cursor-default" style="transition-delay: 300ms;">
+                            <div class="w-12 h-12 rounded-2xl bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#202020]/80 group-hover:border-[#D9281C]/30 transition-colors duration-300">
+                                <iconify-icon icon="solar:clock-circle-linear" class="text-[#D9281C] text-2xl" stroke-width="1.5"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-normal tracking-tight text-[#FAFAFA] mb-1 group-hover:text-[#D9281C] transition-colors duration-300">Horario</h4>
+                                <p class="text-base text-[#A3A3A3] leading-relaxed font-light">Lun - Dom<br>09:00 - 23:00</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group cursor-default" style="transition-delay: 400ms;">
+                            <div class="w-12 h-12 rounded-2xl bg-[#1A1A1A]/60 backdrop-blur-md border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#202020]/80 group-hover:border-[#D9281C]/30 transition-colors duration-300">
+                                <iconify-icon icon="solar:phone-linear" class="text-[#D9281C] text-2xl" stroke-width="1.5"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-normal tracking-tight text-[#FAFAFA] mb-1 group-hover:text-[#D9281C] transition-colors duration-300">Contacto</h4>
+                                <p class="text-base text-[#A3A3A3] leading-relaxed font-light">910 00 00 00<br>ramiro@valdelasfuentes.es</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="bg-[#1A1A1A]/80 backdrop-blur-xl border border-white/5 p-8 lg:p-10 rounded-3xl js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] relative overflow-hidden group hover:border-white/10 transition-colors duration-500" style="transition-delay: 200ms;">
+                    <h4 class="text-2xl font-normal tracking-tight text-[#FAFAFA] mb-6 relative z-10">Hacer una Reserva</h4>
+                    <form class="space-y-5 relative z-10">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="space-y-2">
+                                <label class="text-xs font-light text-[#A3A3A3]">Nombre</label>
+                                <input type="text" class="w-full bg-[#0A0A0A]/50 border border-white/10 rounded-xl px-4 py-3 text-base font-light text-[#FAFAFA] focus:outline-none focus:border-[#D9281C] focus:ring-1 focus:ring-[#D9281C] transition-all duration-300 placeholder:text-[#A3A3A3]/50 hover:border-white/20" placeholder="Juan">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-light text-[#A3A3A3]">Apellidos</label>
+                                <input type="text" class="w-full bg-[#0A0A0A]/50 border border-white/10 rounded-xl px-4 py-3 text-base font-light text-[#FAFAFA] focus:outline-none focus:border-[#D9281C] focus:ring-1 focus:ring-[#D9281C] transition-all duration-300 placeholder:text-[#A3A3A3]/50 hover:border-white/20" placeholder="García">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-light text-[#A3A3A3]">Correo Electrónico</label>
+                            <input type="email" class="w-full bg-[#0A0A0A]/50 border border-white/10 rounded-xl px-4 py-3 text-base font-light text-[#FAFAFA] focus:outline-none focus:border-[#D9281C] focus:ring-1 focus:ring-[#D9281C] transition-all duration-300 placeholder:text-[#A3A3A3]/50 hover:border-white/20" placeholder="juan@ejemplo.com">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-light text-[#A3A3A3]">Mensaje / Peticiones Especiales</label>
+                            <textarea rows="3" class="w-full bg-[#0A0A0A]/50 border border-white/10 rounded-xl px-4 py-3 text-base font-light text-[#FAFAFA] focus:outline-none focus:border-[#D9281C] focus:ring-1 focus:ring-[#D9281C] transition-all duration-300 placeholder:text-[#A3A3A3]/50 resize-none hover:border-white/20" placeholder="Mesa para 2, tras jugar al pádel si es posible..."></textarea>
+                        </div>
+                        
+                        <!-- Custom Checkbox -->
+                        <div class="flex items-start gap-3 pt-2 group/check">
+                            <div class="relative flex items-center mt-0.5">
+                                <input type="checkbox" id="newsletter" class="peer h-4 w-4 cursor-pointer appearance-none rounded border border-white/20 bg-[#0A0A0A]/50 checked:border-[#D9281C] checked:bg-[#D9281C] transition-all duration-300 group-hover/check:border-[#D9281C]/50">
+                                <iconify-icon icon="solar:check-linear" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity duration-300 text-xs" stroke-width="2"></iconify-icon>
+                            </div>
+                            <label for="newsletter" class="text-xs text-[#A3A3A3] font-light cursor-pointer select-none leading-relaxed group-hover/check:text-[#FAFAFA] transition-colors duration-300">Suscríbete a nuestro boletín para recibir actualizaciones de la carta e invitaciones a eventos exclusivos.</label>
+                        </div>
+
+                        <button type="button" class="w-full mt-2 bg-[#D9281C] hover:bg-[#b01e14] text-[#FAFAFA] font-light text-base py-3.5 rounded-xl transition-all duration-300 shadow-[0_4px_14px_rgba(217,40,28,0.2)] hover:shadow-[0_6px_20px_rgba(217,40,28,0.4)] hover:-translate-y-0.5 relative overflow-hidden group/btn">
+                            <span class="relative z-10">Confirmar Reserva</span>
+                            <!-- Hover Shimmer with standard arbitrary class transition -->
+                            <div class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full transition-transform duration-1000 group-hover/btn:translate-x-[200%]"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 js-reveal opacity-0 blur-[8px] translate-y-6 scale-95 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <div class="flex items-center gap-3">
+                    <span class="text-base font-normal tracking-tight text-[#FAFAFA]">RAMIRO</span>
+                    <span class="text-xs text-[#A3A3A3] font-light">© 2024 Todos los derechos reservados.</span>
+                </div>
+                
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-[#A3A3A3] hover:text-[#FAFAFA] hover:scale-110 transition-all duration-300">
+                        <iconify-icon icon="solar:camera-linear" stroke-width="1.5" class="text-xl"></iconify-icon>
+                    </a>
+                    <a href="#" class="text-[#A3A3A3] hover:text-[#FAFAFA] hover:scale-110 transition-all duration-300">
+                        <iconify-icon icon="solar:users-group-rounded-linear" stroke-width="1.5" class="text-xl"></iconify-icon>
+                    </a>
+                    <a href="#" class="text-[#A3A3A3] hover:text-[#FAFAFA] hover:scale-110 transition-all duration-300">
+                        <iconify-icon icon="solar:letter-linear" stroke-width="1.5" class="text-xl"></iconify-icon>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        // Navbar Blur Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-[#0A0A0A]/80', 'backdrop-blur-xl', 'border-white/10', 'py-4');
+                navbar.classList.remove('bg-transparent', 'border-transparent', 'py-6');
+            } else {
+                navbar.classList.add('bg-transparent', 'border-transparent', 'py-6');
+                navbar.classList.remove('bg-[#0A0A0A]/80', 'backdrop-blur-xl', 'border-white/10', 'py-4');
+            }
+        }, { passive: true });
+
+        // Hero Parallax Effect
+        const parallaxBg = document.getElementById('parallax-bg');
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            if(scrolled < window.innerHeight) {
+                parallaxBg.style.transform = `translateY(${scrolled * 0.4}px) scale(1.05)`;
+            }
+        }, { passive: true });
+
+        // Advanced Scroll Reveal Animation using JS instead of CSS classes block
+        const revealElements = document.querySelectorAll('.js-reveal');
+        
+        const revealOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'blur-[8px]', 'translate-y-6', 'scale-95');
+                    entry.target.classList.add('opacity-100', 'blur-none', 'translate-y-0', 'scale-100');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => revealOnScroll.observe(el));
+
+        // Magnetic Buttons Effect
+        const magneticWraps = document.querySelectorAll('.magnetic-wrap');
+        
+        magneticWraps.forEach(wrap => {
+            const btn = wrap.querySelector('.magnetic-btn');
+            if(!btn) return;
+            
+            wrap.addEventListener('mousemove', (e) => {
+                const position = wrap.getBoundingClientRect();
+                const x = e.clientX - position.left - position.width / 2;
+                const y = e.clientY - position.top - position.height / 2;
+                
+                btn.style.transform = `translate(${x * 0.3}px, ${y * 0.4}px)`;
+            });
+            
+            wrap.addEventListener('mouseout', () => {
+                btn.style.transform = 'translate(0px, 0px)';
+            });
+        });
+    </script>
+
+</body></html>
